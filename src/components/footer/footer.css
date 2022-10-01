@@ -1,0 +1,58 @@
+.credits{
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.credits div span{
+    font-family: var(--font-family-R);  
+    font-style: normal;
+    font-size: 15px;
+
+    color: #4E4E4E;
+    
+}
+
+.credits div span a{
+    text-decoration: none;
+    color: #4E4E4E;
+}
+
+.credits div span a:hover{
+    text-decoration: none;
+    color: #F76C6C;
+}
+
+
+/*smaller screen view*/
+@media screen and (max-width: 1050px) {
+}
+
+/*tablet screen view*/
+@media screen and (max-width: 770px){
+    .credits{
+        position: relative;
+        margin-top: 30%;
+    }
+
+    .credits div span{
+        font-size: 12px;
+    }
+
+}
+
+/*mobile screen view*/
+@media screen and (max-width: 550px){
+    .credits{
+        position: relative;
+        margin-top: 43%;
+    }
+
+    .credits div span{
+        font-size: 10px;
+    }
+
+}

@@ -1,0 +1,277 @@
+
+.main{
+    width: 90%;
+    margin: auto;
+    height:60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.main_inner{
+    /*
+    width: 90%;
+    margin: auto;
+    height:90vh;
+    text-align: center;
+    background-color: beige;
+    */
+    margin: auto;
+    width: 100%;
+    
+    text-align: center;
+
+}
+
+.textfields{
+    margin: auto;
+    width: 90%;
+}
+
+.MainText{
+
+
+    font-family: var(--font-family-R);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 104px;
+
+    color: #4E4E4E;
+    margin-bottom: 500px;
+}
+
+
+
+
+.textfields form{
+    display: block;
+}
+
+/*
+.textfield_container{
+    padding: 2% 0 3% 0;
+}
+*/
+.textbox{
+
+    width: 660px;
+    height: 69px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    background: #FFFFFF;
+    border-radius:10px;
+    border: .1px solid rgba(20, 20, 20, 0.418);
+
+    font-family: var(--font-family-R);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ShortenBut_container{
+
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+
+}
+
+.ShortenBut{
+    width: 725px;
+    height: 69px;
+
+    background: #F76C6C;
+    border-radius: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 34px;
+
+    border: .5px solid rgba(20, 20, 20, 0.418);
+    /* identical to box height */
+
+    font-family: var(--font-family-R);
+
+    letter-spacing: 0.08em;
+
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.ShortenBut:hover{
+    background: #A8D0E6;
+    border: .1px solid rgba(20, 20, 20, 0.418);
+    
+}
+.result_container{
+    width: 660px;
+    height: 69px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    background: #FFFFFF;
+    margin: auto;
+    margin-top: 10px;
+    border-radius:10px;
+    border: .1px solid rgba(20, 20, 20, 0.418);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    transition: .5s ease-in-out;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.result{
+    flex: 1;
+    font-family: var(--font-family-R);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #9b9fa8;
+    text-align: left;
+}
+
+.result_link{
+    flex: 1;
+    font-family: var(--font-family-R);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+.copy_result{
+    flex:1;
+    font-family: var(--font-family-R);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: right;
+
+    color: #F76C6C;
+    cursor: pointer;
+
+    
+}
+
+.copy_result:hover{
+    color: #5DB9EC;
+}
+
+
+/*smaller screen view*/
+@media screen and (max-width: 1050px) {
+    
+
+    .MainText{
+        font-size: 62px;
+    }
+
+    .textbox{
+
+        width: 560px;
+        height: 69px;
+    }
+
+    .ShortenBut{
+        width: 620px;
+        height: 69px;
+    }
+
+    .result_container{
+        width: 560px;
+        height: 69px;
+    }
+    
+
+}
+
+/*tablet screen view*/
+@media screen and (max-width: 770px){
+    .MainText{
+        font-size: 52px;
+    }
+
+    .textbox{
+
+        width: 460px;
+        height: 59px;
+        font-size: 17px;
+    }
+
+    .ShortenBut{
+        width: 520px;
+        height: 59px;
+        font-size: 25px;
+    }
+
+    .result_container{
+        width: 460px;
+        height: 59px;
+    }
+    .result,.result_link,.copy_result{
+        font-size: 17px;
+    }
+
+}
+
+/*mobile screen view*/
+@media screen and (max-width: 550px){
+
+    .MainText{
+        font-size: 27px;
+        line-height: 60px;
+    }
+
+    .textbox{
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 220px;
+        height: 39px;
+        font-size: 12px;
+    }
+
+    .ShortenBut_container{
+        height: 40px;
+    }
+    .ShortenBut{
+        width: 260px;
+        height: 39px;
+        font-size: 12px;
+    }
+
+    .result_container{
+        width: 220px;
+        height: 39px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .result,.result_link,.copy_result{
+        
+        font-size: 12px;
+    }
+}
+
